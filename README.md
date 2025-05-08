@@ -36,7 +36,7 @@ try {
 npm test
 ```
 
-## Features
+## ✨ Features
 
 - AES-256-GCM encryption
 - PBKDF2 key derivation
@@ -54,7 +54,7 @@ npm test
 
 - crypto (Native Node.js)
 
-## License
+## 📄 License
 
 MIT
 
