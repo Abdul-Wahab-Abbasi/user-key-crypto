@@ -1,26 +1,39 @@
-# user-key-crypto
+# user-key-crypto 🔐
 
-🔐 Simple, secure AES-256-GCM encryption and decryption with a user-defined secret key.
+A simple and secure Node.js library to encrypt and decrypt data using **user-defined secret keys**. Perfect for applications where **privacy and user-level encryption** is critical.
 
-## Installation
+## 🚀 Installation
 
 ```bash
 npm install user-key-crypto
 ```
 
-## Usage
+## 📦 Usage
 
 ```js
-const { encrypt, decrypt } = require('user-key-crypto');
+const UserCrypto = require('user-key-crypto');
 
-const secret = 'MySecretKey@123';
-const originalData = 'Sensitive User Info';
+const uc = new UserCrypto('mySecretKey##45');
 
-const encrypted = encrypt(originalData, secret);
+const encrypted = uc.encrypt('Secret Info');
 console.log('Encrypted:', encrypted);
 
-const decrypted = decrypt(encrypted, secret);
+const decrypted = uc.decrypt(encrypted);
 console.log('Decrypted:', decrypted);
+```
+## ⚠️ Error Handling
+
+```js
+try {
+  const uc = new UserCrypto();
+} catch (err) {
+  console.error(err.message); // Secret key is required
+}
+```
+## 🧪 Run Tests
+
+```bash
+npm test
 ```
 
 ## Features
@@ -31,6 +44,20 @@ console.log('Decrypted:', decrypted);
 - Stateless utility functions
 - Fully error-handled
 
+## 🔒 Use Cases
+
+- End-to-end encrypted messaging
+- User-level encryption in databases
+- Secure configuration handling
+
+## 🛠️ Tech Used
+
+- crypto (Native Node.js)
+
 ## License
 
 MIT
+
+## 👨‍💻 Author
+
+[Abdul Wahab](https://github.com/Abdul-Wahab-Abbasi) • [LinkedIn](www.linkedin.com/in/web-crafter)

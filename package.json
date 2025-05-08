@@ -1,15 +1,20 @@
 {
   "name": "user-key-crypto",
   "version": "1.0.0",
-  "description": "Encrypt and decrypt data using user-defined keys with AES-256-GCM",
+  "description": "A simple and secure Node.js library to encrypt and decrypt data using user-defined secret keys. Perfect for privacy-focused applications.",
   "main": "index.js",
   "keywords": [
     "encryption",
     "decryption",
     "crypto",
-    "aes-256-gcm",
-    "user-key"
+    "user-secret",
+    "user-key",
+    "security",
+    "data-protection",
+    "nodejs-encryption",
+    "privacy",
+    "crypto-js"
   ],
-  "author": "Abdul Wahab",
+  "author": "Abdul Wahab Abbasi",
   "license": "MIT"
 }
