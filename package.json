@@ -1,6 +1,6 @@
 {
   "name": "user-key-crypto",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple and secure Node.js library to encrypt and decrypt data using user-defined secret keys. Perfect for privacy-focused applications.",
   "main": "index.js",
   "keywords": [
