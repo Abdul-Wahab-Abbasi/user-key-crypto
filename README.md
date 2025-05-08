@@ -11,27 +11,24 @@ npm install user-key-crypto
 ## 📦 Usage
 
 ```js
-const { setSecretKey, encrypt, decrypt } = require('user-key-crypto');
-
-// Set your user-defined secret key
-setSecretKey('mySecretKey##45');
+const { encrypt, decrypt } = require('user-key-crypto');
 
 // Encrypt and decrypt
-const encrypted = encrypt('Secret Info');
+const encrypted = encrypt('Secret Info','mySecretKey##45');
 console.log('Encrypted:', encrypted);
 
-const decrypted = decrypt(encrypted);
+const decrypted = decrypt(encrypted,'mySecretKey##45');
 console.log('Decrypted:', decrypted);
 ```
 ## ⚠️ Error Handling
 
 ```js
-const { setSecretKey, encrypt } = require('user-key-crypto');
+const { encrypt } = require('user-key-crypto');
 
 try {
-  const encrypted = encrypt('data'); // Throws error if key is not set
+  const encrypted = encrypt('data',688); // Throws error if key is not string
 } catch (err) {
-  console.error(err.message); // Secret key not set
+  console.error(err.message); // Secret must be a string
 }
 ```
 ## 🧪 Run Tests
