@@ -60,4 +60,4 @@ MIT
 
 ## 👨‍💻 Author
 
-[Abdul Wahab](https://github.com/Abdul-Wahab-Abbasi) • [LinkedIn](www.linkedin.com/in/web-crafter)
+[Abdul Wahab](https://github.com/Abdul-Wahab-Abbasi) • [LinkedIn](https://linkedin.com/in/web-crafter)
